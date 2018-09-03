@@ -10,13 +10,77 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "userNameAndPassWord/ViewController.swift"
-            timestampString = "557227102.5713609"
+            timestampString = "557652229.924433"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
-            landmarkName = "ViewController"
-            landmarkType = "3">
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "putIntUserNameAndPassWord2()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "userNameAndPassWord/ViewController.swift"
+            timestampString = "557652229.925337"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "putIntUserNameAndPassWord3()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "userNameAndPassWord/SimpleValidationViewModel.swift"
+            timestampString = "557652249.023615"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "init(userName:passWord:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "userNameAndPassWord.SimpleValidationViewModel.init(userName: RxSwift.Observable&lt;Swift.String&gt;, passWord: RxSwift.Observable&lt;Swift.String&gt;) -&gt; userNameAndPassWord.SimpleValidationViewModel"
+                  moduleName = "userNameAndPassWord"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yinyongzhen/Documents/yyz/ios/RXCocoa--swift/userNameAndPassWord/userNameAndPassWord/SimpleValidationViewModel.swift"
+                  timestampString = "557652249.326412"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "496">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.String) -&gt; Swift.Bool in userNameAndPassWord.SimpleValidationViewModel.init(userName: RxSwift.Observable&lt;Swift.String&gt;, passWord: RxSwift.Observable&lt;Swift.String&gt;) -&gt; userNameAndPassWord.SimpleValidationViewModel"
+                  moduleName = "userNameAndPassWord"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yinyongzhen/Documents/yyz/ios/RXCocoa--swift/userNameAndPassWord/userNameAndPassWord/SimpleValidationViewModel.swift"
+                  timestampString = "557652249.328595"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "26">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

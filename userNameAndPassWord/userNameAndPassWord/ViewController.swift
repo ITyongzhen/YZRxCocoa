@@ -28,12 +28,25 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // MVC
-        putIntUserNameAndPassWord2()
+        putIntUserNameAndPassWord3()
         
     }
     
     
     func putIntUserNameAndPassWord3()  {
+        let minUserNameLength = 5
+        let minPassWordLength = 6
+        userNameLabel.text = "userName has to be at least \(minUserNameLength) characters"
+        passWordLabel.text = "passWord has to be at least \(minPassWordLength) characters"
+        viewModel = SimpleValidationViewModel(userName: userNameTextField.rx.text.orEmpty.asObservable(), passWord: passWordTextField.rx.text.orEmpty.asObservable())
+        
+        viewModel.userNameValid.bind(to: userNameLabel.rx.isHidden).disposed(by: disposeBag)
+        viewModel.userNameValid.bind(to: passWordTextField.rx.isEnabled).disposed(by: disposeBag)
+        
+        viewModel.passWordValid.bind(to: passWordLabel.rx.isHidden).disposed(by: disposeBag)
+        
+        viewModel.everyThingValid.bind(to: button.rx.isEnabled).disposed(by: disposeBag)
+        button.rx.tap.subscribe(onNext: {[weak self] in self?.showAlert() }).disposed(by: disposeBag)
         
     }
     
