@@ -24,8 +24,20 @@ class ViewController: UIViewController {
     
       let disposeBag = DisposeBag()
     
+    private var viewModel: SimpleValidationViewModel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        // MVC
+        putIntUserNameAndPassWord2()
+        
+    }
+    
+    
+    func putIntUserNameAndPassWord3()  {
+        
+    }
+    
+    func putIntUserNameAndPassWord2() {
         let minUserNameLength = 5
         let minPassWordLength = 6
         
@@ -36,7 +48,7 @@ class ViewController: UIViewController {
         // 密码是否有效
         let passWordValid = passWordTextField.rx.text.orEmpty.map{ $0.count >= minPassWordLength}.share(replay: 1)
         
-         // 所有输入是否有效
+        // 所有输入是否有效
         let everythingValid = Observable.combineLatest(usernameValid,passWordValid){ $0 && $1 }.share(replay: 1)
         
         // 用户名是否有效 -> 密码输入框是否可用
@@ -46,11 +58,15 @@ class ViewController: UIViewController {
         // 密码是否有效 -> 密码提示语是否隐藏
         passWordValid.bind(to: passWordLabel.rx.isHidden).disposed(by: disposeBag)
         
-         // 所有输入是否有效 -> 按钮是否可点击
+        // 所有输入是否有效 -> 按钮是否可点击
         everythingValid.bind(to: button.rx.isEnabled).disposed(by: disposeBag)
         //点击按钮 -> 弹出提示框
         button.rx.tap.subscribe(onNext: {[weak self] in self?.showAlert()}).disposed(by: disposeBag)
     }
+    
+    
+    
+    
     func putIntUserNameAndPassWord() {
         let minimalUsernameLength = 5
         let minimalPasswordLength = 6

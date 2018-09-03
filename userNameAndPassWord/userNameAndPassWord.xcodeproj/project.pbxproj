@@ -15,6 +15,7 @@
 		218D402821355DC20025D19E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 218D402621355DC20025D19E /* LaunchScreen.storyboard */; };
 		218D403321355DC20025D19E /* userNameAndPassWordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218D403221355DC20025D19E /* userNameAndPassWordTests.swift */; };
 		218D403E21355DC20025D19E /* userNameAndPassWordUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218D403D21355DC20025D19E /* userNameAndPassWordUITests.swift */; };
+		21B8D501213D0C20008AE6DB /* SimpleValidationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B8D500213D0C20008AE6DB /* SimpleValidationViewModel.swift */; };
 		43F1A018AF982624CF1FF2FB /* Pods_userNameAndPassWordUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDBC0F4D7D028129A006F291 /* Pods_userNameAndPassWordUITests.framework */; };
 		C48CE9E6E12C864F24E9CE13 /* Pods_userNameAndPassWordTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8A18E22D49A3498F6F5BAFC /* Pods_userNameAndPassWordTests.framework */; };
 		D98A2F2E16CA421061C395B0 /* Pods_userNameAndPassWord.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F29D8DD2F7A41694CEBA085 /* Pods_userNameAndPassWord.framework */; };
@@ -52,6 +53,7 @@
 		218D403921355DC20025D19E /* userNameAndPassWordUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = userNameAndPassWordUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		218D403D21355DC20025D19E /* userNameAndPassWordUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userNameAndPassWordUITests.swift; sourceTree = "<group>"; };
 		218D403F21355DC20025D19E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21B8D500213D0C20008AE6DB /* SimpleValidationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleValidationViewModel.swift; sourceTree = "<group>"; };
 		606BB487D6FF88A3546D2089 /* Pods-userNameAndPassWordUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-userNameAndPassWordUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-userNameAndPassWordUITests/Pods-userNameAndPassWordUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		66D87AB439277A89FD638D91 /* Pods-userNameAndPassWordTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-userNameAndPassWordTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-userNameAndPassWordTests/Pods-userNameAndPassWordTests.release.xcconfig"; sourceTree = "<group>"; };
 		8F29D8DD2F7A41694CEBA085 /* Pods_userNameAndPassWord.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_userNameAndPassWord.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +120,7 @@
 			children = (
 				218D401A21355DC00025D19E /* AppDelegate.swift */,
 				218D401C21355DC00025D19E /* ViewController.swift */,
+				21B8D500213D0C20008AE6DB /* SimpleValidationViewModel.swift */,
 				218D401E21355DC00025D19E /* Main.storyboard */,
 				218D402421355DC20025D19E /* Assets.xcassets */,
 				218D402621355DC20025D19E /* LaunchScreen.storyboard */,
@@ -304,15 +307,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-userNameAndPassWord-checkManifestLockResult.txt",
 			);
@@ -326,15 +325,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-userNameAndPassWordUITests-checkManifestLockResult.txt",
 			);
@@ -348,16 +343,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-userNameAndPassWord/Pods-userNameAndPassWord-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -372,15 +363,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-userNameAndPassWordTests-checkManifestLockResult.txt",
 			);
@@ -399,6 +386,7 @@
 				218D402321355DC00025D19E /* userNameAndPassWord.xcdatamodeld in Sources */,
 				218D401D21355DC00025D19E /* ViewController.swift in Sources */,
 				218D401B21355DC00025D19E /* AppDelegate.swift in Sources */,
+				21B8D501213D0C20008AE6DB /* SimpleValidationViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
